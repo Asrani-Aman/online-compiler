@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITOR</title>
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="coding">
+        <!-- navbar part -->
+        <div class="navbar">
+            <div class="logo">CODING CLASSROOM</div>
+            <ul class="list">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">CLASSROOM</a>
+                </li>
+                <li>
+                    <a href="#">VIDEO</a>
+                </li>
+                <li>
+                    <a href="#">EDITOR</a>
+                </li>
+            </ul>
+        </div>
+        <!-- controls button part -->
+        <div class="controls">
+            <div class="coding-controls">
+                <button class="coding-button Previous" onclick="previousQuestion()">Previous Question</button>
+                <button class="coding-button Next" onclick="nextQuestion() ">Next Question</button>
+                <button class="coding-button showAnswer" onclick="showAnswer()">Show Answer</button>
+            </div>
+
+
+            <div class="coding-con">
+                <div class="coding-child-questions">
+                    <h1 class="coding-heading">DSA QUESTIONS</h1>
+                    <div class="coding-question-con">
+                        <textarea class="coding-ques-textarea-ques" rows="25">
+
+
+                    </textarea>
+                    </div>
+                </div>
+                <form action="/" method="POST">
+                    <div class="coding-select">
+                        <select id="language" name="form[language]">
+
+
+                            <option value="c">C (11.2.0)</option>
+                            <option value="cpp">C++ (11.2.0)</option>
+                            <option value="cs">C#</option>
+
+                            <option value="go">GoLang </option>
+
+                            <option value="java">Java (11.0.15)</option>
+                            <option value="js">JavaScript (Node.js 12.14.0)</option>
+
+                            <option value="py">Python (3.7.7)</option>
+
+
+                        </select>
+                    </div>
+                    <div class="coding-con-code">
+                        <h1 class="coding-heading">Code Editor</h1>
+                        <textarea class="code-editor-write" rows="15" placeholder="Enter Code here" id="body"
+                            name="form[body]"> <%= body %> </textarea>
+                        <div class="coding-cone-output">
+                            <textarea class="code-editor-input" rows="10" placeholder="Enter Input (If any)" id="input"
+                                name="form[input]"></textarea>
+                            <textarea class="code-editor-output" rows="10"
+                                placeholder="Output Screen">  <%= c %> </textarea>
+                        </div>
+                        <button class="coding-button run">Run Compile</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>

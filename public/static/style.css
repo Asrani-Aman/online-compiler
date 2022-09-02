@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,500&family=Oswald:wght@300;400&family=Signika+Negative:wght@400;500;600&display=swap");
+
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-image: url("wave-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* z-index: -1; */
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Signika Negative", sans-serif;
+  height: 100vh;
+}
+.coding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2%;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.logo {
+  font-size: 3vw;
+  color: white;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.coding .navbar ul li a {
+  padding: 1rem;
+  font-size: 2vw;
+  transition: 0.2s;
+  color: #fff;
+  text-decoration: none;
+}
+.controls {
+  /* position: relative; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  /* top: 5rem; */
+  margin: 4rem 0 1rem 0;
+  padding: 0.5rem 0rem;
+}
+button.coding-button {
+  background: transparent;
+  margin: 0 0.5rem;
+  color: #fff;
+  padding: 0.7rem;
+  border: 2px solid #0066ff;
+  border-radius: 50vw;
+  cursor: pointer;
+  font-size: 1.2vw;
+  transition: 0.3s ease-in;
+}
+.coding-button:hover {
+  /* position: absolute; */
+  background-color: #0066ff;
+}
+.coding-button:after {
+  content: "";
+  display: block;
+  /* position: absolute; */
+  border-radius: 4vw;
+  /* left: 0; */
+  /* top: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.coding-button:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4vw;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.coding-button:active {
+  top: 1px;
+}
+button.run {
+  padding: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 0%;
+}
+select {
+  background: #0066ff;
+  color: white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1vw;
+  font-size: 1.5vw;
+}
+.coding-con {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.coding-child-questions {
+  width: 50%;
+  /* padding: 0.4rem; */
+}
+.coding-con-code {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.coding-cone-output {
+  display: flex;
+  flex-direction: row;
+}
+.coding-ques-textarea-ques {
+  width: 98%;
+}
+textarea.code-editor-input {
+  width: 50%;
+}
+textarea.code-editor-output {
+  width: 50%;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+textarea {
+  box-shadow: rgba(15, 48, 145, 0.17) 0px -23px 25px 0px inset,
+    rgba(8, 40, 221, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  background: hsla(240, 100%, 50%, 0.1);
+  margin: 0.2rem;
+  color: white;
+  font-size: 1.2vw;
+}
